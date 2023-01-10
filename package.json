@@ -1,11 +1,13 @@
 {
-  "name": "asset-graph",
-  "version": "1.0.0",
+  "name": "@permaweb/asset-graph",
+  "version": "0.0.1",
   "main": "dist/index.js",
   "repository": "https://github.com/twilson63/asset-graph.git",
   "author": "Tom Wilson <tom@hyper.io>",
   "license": "MIT",
   "devDependencies": {
+    "@bundlr-network/client": "^0.9.11",
+    "arweave": "^1.12.2",
     "esbuild": "^0.16.16",
     "tsm": "^2.3.0",
     "uvu": "^0.5.6"
@@ -16,6 +18,7 @@
   },
   "scripts": {
     "build": "esbuild --bundle src/index.ts --outfile=dist/index.js --format=esm",
-    "test": "uvu -r tsm"
+    "test": "uvu -r tsm",
+    "build:types": "tsc src/index.ts --declaration --emitDeclarationOnly --declarationDir dist"
   }
 }

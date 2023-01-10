@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Test</title>
+  <script type="module">
+    import graph from 'https://arweave.net/LZKpcunUbiRT_kNHwUrJwXz6EJgL2ghnAVh5jSMXTrI'
+
+    document.getElementById('btn').addEventListener('click', async () => {
+      const result = await graph('vCU8cXnxkkMupiACruf9ih2M4k_CWIEvGsozbY9jlzg')
+      console.log(result)
+    })
+  </script>
+</head>
+
+<body>
+  <h1>Test Graph</h1>
+  <button id="btn">Get Node</button>
+</body>
+
+</html>
