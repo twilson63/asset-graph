@@ -88,4 +88,7 @@ async function main() {
 }
 ```
 
-## 
+## Configuration
+
+The default gateway is set to https://arweave.net, if you want/need to change the gateway you can use the 
+`import.meta.env.ARWEAVE` env variable to change
