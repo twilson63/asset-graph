@@ -1,6 +1,6 @@
 {
   "name": "@permaweb/asset-graph",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/index.js",
   "repository": "https://github.com/twilson63/asset-graph.git",
   "author": "Tom Wilson <tom@hyper.io>",
