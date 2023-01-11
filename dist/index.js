@@ -1004,7 +1004,7 @@ var sortBy_default = sortBy;
 var hasProtoTrim = typeof String.prototype.trim === "function";
 
 // src/gql.ts
-var arweaveUrl = import.meta?.env?.ARWEAVE || "https://arweave.net";
+var arweaveUrl = "https://arweave.net";
 function run(data) {
   return fetch(`${arweaveUrl}/graphql`, {
     method: "POST",

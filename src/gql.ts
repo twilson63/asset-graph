@@ -1,7 +1,8 @@
 import { path } from 'ramda'
 
+// import.meta?.env?.ARWEAVE ||
 // @ts-ignore
-const arweaveUrl = import.meta?.env?.ARWEAVE || 'https://arweave.net'
+const arweaveUrl = 'https://arweave.net'
 
 function run(data: { query: string, variables: Record<string, any> }): Promise<any> {
   return fetch(`${arweaveUrl}/graphql`, {
