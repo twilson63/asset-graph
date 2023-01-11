@@ -2,13 +2,14 @@
   "name": "@permaweb/asset-graph",
   "version": "0.0.2",
   "source": "src/index.ts",
-  "main": "./dist/index.cjs",
+  "main": "./dist/index.js",
   "exports": {
-    "require": "./dist/index.cjs",
+    "require": "./dist/index.js",
     "default": "./dist/index.modern.mjs"
   },
   "module": "./dist/index.esm.mjs",
   "unpkg": "./dist/index.umd.js",
+  "types": "dist/index.d.ts",
   "repository": "https://github.com/twilson63/asset-graph.git",
   "author": "Tom Wilson <tom@hyper.io>",
   "license": "MIT",
@@ -25,7 +26,7 @@
     "zod": "^3.20.2"
   },
   "scripts": {
-    "build": "esbuild --bundle src/index.ts --outfile=dist/index.js --format=esm",
+    "build": "microbundle",
     "test": "uvu -r tsm",
     "build:types": "tsc src/index.ts --declaration --emitDeclarationOnly --declarationDir dist",
     "deploy": "bundlr upload permaweb-asset-graph-0.0.2.tgz -w ./wallet.json -c arweave -h https://node2.bundlr.network"
